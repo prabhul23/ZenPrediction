@@ -48,7 +48,7 @@ else:
 user_input["UG Marks (In Percentage)"] = [marks_ug]
 
 # educational background
-ed_back = st.selectbox('What is your educational background?', ('BE/B.Tech','B.Sc','B.Com','BCA','Diploma','BA','BBA','B.Arch'))
+ed_back = st.selectbox('What is your educational background?', ('Engineering','Non-Engineering'))
 user_input["What is your Educational Background ?"] = [mapping_dict[ed_back]]
 
 # highest degree
@@ -56,8 +56,8 @@ high_degree = st.selectbox("What is your Highest Qualification?", ('School','Dip
 user_input["What is your Highest Qualification?"] = [mapping_dict[high_degree]]
 
 # Coding experience
-coding = st.slider('How much coding experience do you have (in years)?', 0, 20, 5)
-user_input["Coding experience (In Years)"] = [coding]
+coding = st.selectbox('How much coding experience do you have (in years)?', ('No Experience','Less than one','one year','two years','three years','four years','More than 5'))
+user_input["Coding experience (In Years)"] = [mapping_dict[coding]]
 
 # coding background
 code_ex = st.selectbox('What Stage you are in when it comes to coding skills?', ('Very Basic(Dont Know how to Code, Need to Start from Scratch)','Basic(Know Basics of Coding)','Intermediate(Know Coding but not advance level )','Advanced(Very Good in Coding )'))
@@ -68,28 +68,28 @@ curr_profile = st.selectbox("What's your current profile?", ('Working in Non-IT'
 user_input["What's your current profile?"] = [mapping_dict[curr_profile]]
 
 # Current CTC
-ctc = st.slider('What is your current CTC (in lakhs)?', 0, 40, 3)
-user_input["Current CTC"] = [ctc]
+ctc = st.selectbox('What is your current CTC (in lakhs)?', ('Not Applicable','Less than 3LPA','3-5LPA','5.1-7LPA','7.1-10 LPA','> 10 LPA'))
+user_input["Current CTC"] = [mapping_dict[ctc]]
 
 # Family CTC
-family_ctc = st.slider("What's your Family Monthly Income(If you are working, what's your Monthly Income)?", 0, 40, 3)
-user_input["What's your Family Monthly Income(If you are working, what's your Monthly Income)?"] = [family_ctc]
+family_ctc = st.selectbox("What's your Family Monthly Income(If you are working, what's your Monthly Income)?", ('20-30k','Less than 20k','31-50k','Above 70k','51-70k'))
+user_input["What's your Family Monthly Income(If you are working, what's your Monthly Income)?"] = [mapping_dict[family_ctc]]
 
 # Expected CTC
-expected_ctc = st.slider('Whats your expected salary (CTC/Annum) after completing this program with GUVI?', 0, 40, 5)
-user_input["Whats your expected salary (CTC/Annum) after completing this program with GUVI?"] = [expected_ctc]
+expected_ctc = st.selectbox('Whats your expected salary (CTC/Annum) after completing this program with GUVI?', ('Not Applicable','Less than 3LPA','3-5LPA','5.1-7LPA','7.1-10 LPA','> 10 LPA'))
+user_input["Whats your expected salary (CTC/Annum) after completing this program with GUVI?"] = [mapping_dict[expected_ctc]]
 
 # work experience
-work_exp = st.slider('Work experience (In Years)', 0, 25, 2)
-user_input["Work experience (In Years)"] = [work_exp]
+work_exp = st.selectbox('Work experience (In Years)', ('No Experience','Less than one','one year','two years','three years','four years','More than 5'))
+user_input["Work experience (In Years)"] = [mapping_dict[work_exp]]
 
 # coding exposure
-coding_exp = st.selectbox("How much coding exposure do you have?", ('No Coding experience','Basic Looping','Basic DS ( Array, LL, Stack, Q)','Nested/2D arrays','File-handling','Dropped','Ongoing',"Completed"))
+coding_exp = st.selectbox("How much coding exposure do you have?", ('No Coding experience','Basic Looping','Basic DS ( Array, LL, Stack, Q)','Nested/2D arrays','File-handling'))
 user_input["Your Coding exposure"] = [mapping_dict[coding_exp]]
 
 # hours spend
-weekly_hours = st.slider('How many hours a week you can spend?', 0, 60, 2)
-user_input["How many hours a week you can spend?"] = [weekly_hours]
+weekly_hours = st.selectbox('How many hours a week you can spend?', ('12 - 16 Hours (Per week)','8 Hours (Per week)','<8 Hours (Per week)'))
+user_input["How many hours a week you can spend?"] = [mapping_dict[weekly_hours]]
 
 # about us
 about_us = st.selectbox('How you know about us?', ('Friend','Google search','Instagram','YouTube','Google Ads','Facebook','Employee referred','LinkedIn'))
