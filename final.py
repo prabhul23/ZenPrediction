@@ -57,7 +57,7 @@ payment_type = st.selectbox("Payment Type", ('Direct - Full Payment','Direct - P
 user_input["Payment Type"] = [mapping_dict[payment_type]]
 
 # UG Degree
-degree_ug = st.selectbox('What is your educational background?', ('BE/B.Tech','B.Sc','B.Com','BCA','Diploma','BA','BBA','B.Arch'))
+degree_ug = st.selectbox('What is your UG Degree?', ('BE/B.Tech','B.Sc','B.Com','BCA','Diploma','BA','BBA','B.Arch'))
 user_input["UG Degree"] = [mapping_dict[degree_ug]]
 
 # UG marks
