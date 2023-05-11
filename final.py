@@ -98,7 +98,7 @@ work_exp = st.selectbox('Work experience (In Years)', ('No Experience','Less tha
 user_input["Work experience (In Years)"] = [mapping_dict[work_exp]]
 
 # coding exposure
-coding_exp = st.selectbox("How much coding exposure do you have?", ('No Coding experience','Basic Looping','Basic DS ( Array, LL, Stack, Q)','Nested/2D arrays','File-handling','Dropped','Ongoing',"Completed"))
+coding_exp = st.selectbox("How much coding exposure do you have?", ('No Coding experience','Basic Looping','Basic DS ( Array, LL, Stack, Q)','Nested/2D arrays','File-handling'))
 user_input["Your Coding exposure"] = [mapping_dict[coding_exp]]
 
 #print(len(user_input.keys()))
