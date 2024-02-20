@@ -1,3 +1,4 @@
+import sklearn
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -22,9 +23,9 @@ user_input = {}
 
 @st.cache_data
 def load_model():
-    model = pickle.load(open("ZenClass.pkl", "rb"))
+    model = pickle.load(open("ZenClass (1).pkl", "rb"))
     return model
-feature_names = pickle.load(open("Featurenames.pkl", "rb"))
+feature_names = pickle.load(open("Featurenames (1).pkl", "rb"))
 
 st.title("Zen Class Prediction App")
 
